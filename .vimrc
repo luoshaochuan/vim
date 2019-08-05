@@ -1,3 +1,10 @@
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree'
+Plug 'altercation/vim-colors-solarized'
+Plug 'itchyny/lightline.vim'
+Plug 'vim-scripts/taglist.vim'
+call plug#end()
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -26,3 +33,10 @@ filetype plugin on    " required
 set nu! " 显示行号
 syntax on " 代码高亮
 set ts=4 " 设置tab键为四个空格
+
+syntax enable
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
+
+set laststatus=2
