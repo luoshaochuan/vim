@@ -20,6 +20,8 @@ Plug 'kshenoy/vim-signature'
 Plug 'roxma/vim-paste-easy'
 "Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'tpope/vim-fugitive'
+Plug 'thinca/vim-quickrun'
+Plug 'derekwyatt/vim-fswitch'
 call plug#end()
 
 set nu
@@ -31,8 +33,10 @@ set hlsearch
 set guifont=*
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
-set statusline+=%f
 set laststatus=2
+set statusline=%F
+set statusline+=%=
+set statusline+=%{getcwd()}
 set tags=./.tags;,.tags
 set ts=4
 
@@ -41,6 +45,9 @@ syntax enable
 set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
+
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
 
 "LeaderF
 noremap <c-n> :LeaderfMru<cr>
@@ -61,6 +68,8 @@ noremap <leader>fd :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand
 noremap <leader>fo :<C-U><C-R>=printf("Leaderf! gtags --recall %s", "")<CR><CR>
 noremap <leader>fn :<C-U><C-R>=printf("Leaderf gtags --next %s", "")<CR><CR>
 noremap <leader>fp :<C-U><C-R>=printf("Leaderf gtags --previous %s", "")<CR><CR>
+" search word under cursor, the pattern is treated as regex, and enter normal mode directly
+noremap <C-m> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
 
 "neocomplete
 "Note: This option must be set in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
@@ -163,3 +172,31 @@ map <silent> <leader>tl :Tlist<cr>
 
 "NERDTree
 map <silent> <leader>nd :NERDTree<cr> 
+
+set mouse=a
+
+let g:AutoPairsFlyMode = 0
+let g:AutoPairsMultilineClose = 0
+
+" quickrun
+let g:quickrun_config = {}
+let g:quickrun_config.cpp = {
+            \ 'type' : 'cpp/g++',
+            \ 'command': 'g++',
+            \ 'exec': ['%c %o %s -std=c++17 -o %s:p:r', '%s:p:r %a'],
+            \ 'tempfile': '%{tempname()}.cpp',
+            \ 'hook/sweep/files': '%S:p:r',
+            \}
+
+" file switch
+let g:fsnonewfiles = 'off'
+au! BufEnter *.cpp let b:fswitchdst = 'h,ipp' | let b:fswitchlocs = './,../include/,reg:/src/include/'
+au! BufEnter *.h let b:fswitchdst = 'ipp,cpp' | let b:fswitchlocs = './,../src/,reg:/include/src/'
+au! BufEnter *.ipp let b:fswitchdst = 'cpp,h' | let b:fswitchlocs = './,../src/,../include/,reg:/include/src/,reg:/src/include/'
+nmap <F2> :silent! FSHere<Cr>
+
+let g:lightline = {
+            \ 'component' : {
+            \ 'filename' : '%F',
+            \ }
+            \ }
