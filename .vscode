@@ -1,0 +1,80 @@
+{
+    "cmake-tools-helper.cmake_download_path": "/Users/hanbin/.vscode/extensions/maddouri.cmake-tools-helper-0.2.1/cmake_download",
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 18,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+      }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["<leader>", "d"],
+        "after": ["d", "d"]
+      },
+      {
+        "before": ["<C-n>"],
+        "commands": [":nohl"]
+      }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+      "<C-a>": false,
+      "<C-f>": false
+    },
+    "editor.fontFamily": "Consolas",
+    "debug.console.fontSize": 16,
+    "debug.console.fontFamily": "Meslo",
+    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontFamily": "Meslo LG M for Powerline",
+    // PlantUMLServer: Render diagrams by server which is specified with "plantuml.server". It's much faster, but requires a server.
+    // Local is the default configuration.
+    "plantuml.render": "PlantUMLServer",
+
+    // Plantuml server to generate UML diagrams on-the-fly.
+    "plantuml.server": "http://www.plantuml.com/plantuml",
+    "window.zoomLevel": 1,
+    "workbench.iconTheme": null,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "C_Cpp.intelliSenseEngine": "Default",
+    "gnuGlobal.globalExecutable": "/usr/local/bin/global",
+    "gnuGlobal.gtagsExecutable": "/usr/local/bin/gtags",
+    "breadcrumbs.enabled": false,
+    "workbench.colorTheme": "Solarized Light+",
+    "editor.tabSize": 8,
+    "workbench.colorCustomizations" : {
+      "terminal.background": "#282a36",
+      "terminalCursor.background": "#282a36",
+      "terminalCursor.foreground": "#97979b",
+      "terminal.selectionBackground": "#97979b33",
+      "terminal.foreground": "#eff0eb",
+      "terminal.ansiBlack": "#282a36",
+      "terminal.ansiRed": "#ff5c57",
+      "terminal.ansiGreen": "#5af78e",
+      "terminal.ansiYellow": "#f3f99d",
+      "terminal.ansiBlue": "#57c7ff",
+      "terminal.ansiMagenta": "#ff6ac1",
+      "terminal.ansiCyan": "#9aedfe",
+      "terminal.ansiWhite": "#f1f1f0",
+      "terminal.ansiBrightBlack": "#686868",
+      "terminal.ansiBrightRed": "#ff5c57",
+      "terminal.ansiBrightGreen": "#5af78e",
+      "terminal.ansiBrightYellow": "#f3f99d",
+      "terminal.ansiBrightBlue": "#57c7ff",
+      "terminal.ansiBrightMagenta": "#ff6ac1",
+      "terminal.ansiBrightCyan": "#9aedfe",
+      "terminal.ansiBrightWhite": "#eff0eb""
+    },
+}

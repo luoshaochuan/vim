@@ -1,0 +1,29 @@
+let mapleader = " "
+inoremap jj <ESC>
+
+set surround
+set multiple-cursors
+set commentary
+set argtextobj
+set easymotion
+set textobj-entire
+set ReplaceWithRegister
+
+let g:argtextobj_pairs="[:],(:),<:>"
+
+set showmode
+set so=5
+set incsearch
+set nu
+
+set ideajoin
+set ideastatusicon=gray
+set idearefactormode=keep
+
+map <leader>f :action GotoDeclaration<CR>
+map <leader>d :action FindUsages<CR>
+map <C-n> :action RecentFiles<CR>
+map <C-m> :action QuickJavaDoc<CR>
+map <C-b> :action ActivateTerminalToolWindow<CR>
+map <C-o> :action Back<CR>
+map <C-i> :action Forward<CR>
