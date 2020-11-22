@@ -15,4 +15,5 @@ shd101wyy.markdown-preview-enhanced
 twxs.cmake
 VisualStudioExptTeam.vscodeintellicode
 vscodevim.vim
+YoshinoriN.current-file-path
 yzhang.markdown-all-in-one

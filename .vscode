@@ -44,7 +44,6 @@
     // Plantuml server to generate UML diagrams on-the-fly.
     "plantuml.server": "http://www.plantuml.com/plantuml",
     "window.zoomLevel": 1,
-    "workbench.iconTheme": null,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "python.jediEnabled": false,
@@ -53,7 +52,7 @@
     "gnuGlobal.gtagsExecutable": "/usr/local/bin/gtags",
     "breadcrumbs.enabled": false,
     "workbench.colorTheme": "Solarized Light+",
-    "editor.tabSize": 8,
+    "editor.tabSize": 4,
     "workbench.colorCustomizations" : {
       "terminal.background": "#282a36",
       "terminalCursor.background": "#282a36",
@@ -75,6 +74,14 @@
       "terminal.ansiBrightBlue": "#57c7ff",
       "terminal.ansiBrightMagenta": "#ff6ac1",
       "terminal.ansiBrightCyan": "#9aedfe",
-      "terminal.ansiBrightWhite": "#eff0eb""
+      "terminal.ansiBrightWhite": "#eff0eb"
     },
+    "cmake.configureOnOpen": false,
+    "workbench.sideBar.location": "right",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": true,
+      "strings": true
+    },
+    "currentFilePath.defaultPathStartsFrom": "workSpace"
 }
