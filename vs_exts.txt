@@ -9,6 +9,8 @@ jbenden.c-cpp-flylint
 jebbs.plantuml
 ms-python.python
 ms-toolsai.jupyter
+ms-vscode-remote.remote-ssh
+ms-vscode-remote.remote-ssh-edit
 ms-vscode.cmake-tools
 PKief.material-icon-theme
 ryanolsonx.solarized
