@@ -4,6 +4,19 @@
     "editor.fontSize": 18,
     "terminal.integrated.shell.osx": "/bin/zsh",
 
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": ["#8FBCBB", "#434C5E"],
+    "vim.statusBarColors.insert": "#BF616A",
+    "vim.statusBarColors.visual": "#B48EAD",
+    "vim.statusBarColors.visualline": "#B48EAD",
+    "vim.statusBarColors.visualblock": "#A3BE8C",
+    "vim.statusBarColors.replace": "#D08770",
+    "vim.statusBarColors.commandlineinprogress": "#007ACC",
+    "vim.statusBarColors.searchinprogressmode": "#007ACC",
+    "vim.statusBarColors.easymotionmode": "#007ACC",
+    "vim.statusBarColors.easymotioninputmode": "#007ACC",
+    "vim.statusBarColors.surroundinputmode": "#007ACC",
+
     "vim.easymotion": true,
     "vim.sneak": true,
     "vim.incsearch": true,
@@ -24,6 +37,10 @@
       {
         "before": ["<C-n>"],
         "commands": [":nohl"]
+      },
+      {
+        "before" : ["<leader>", "c", "i"],
+        "after": ["g", "c", "c"]
       }
     ],
     "vim.leader": "<space>",
@@ -74,7 +91,11 @@
       "terminal.ansiBrightBlue": "#57c7ff",
       "terminal.ansiBrightMagenta": "#ff6ac1",
       "terminal.ansiBrightCyan": "#9aedfe",
-      "terminal.ansiBrightWhite": "#eff0eb"
+      "terminal.ansiBrightWhite": "#eff0eb",
+      "statusBar.background": "#B48EAD",
+      "statusBar.noFolderBackground": "#B48EAD",
+      "statusBar.debuggingBackground": "#B48EAD",
+      "statusBar.foreground": "#434C5E"
     },
     "cmake.configureOnOpen": false,
     "workbench.sideBar.location": "right",
