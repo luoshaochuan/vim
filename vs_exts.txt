@@ -1,9 +1,10 @@
 Atishay-Jain.All-Autocomplete
-austin.code-gnu-global
 cschlosser.doxdocgen
+danielpinto8zz6.c-cpp-compile-run
 DavidAnson.vscode-markdownlint
 eamodio.gitlens
 emmanuelbeziat.vscode-great-icons
+jaycetyle.vscode-gnu-global
 jbenden.c-cpp-flylint
 jebbs.plantuml
 ms-python.python

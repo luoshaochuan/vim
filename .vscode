@@ -83,5 +83,7 @@
       "comments": true,
       "strings": true
     },
-    "currentFilePath.defaultPathStartsFrom": "workSpace"
+    "currentFilePath.defaultPathStartsFrom": "workSpace",
+    "c-cpp-flylint.flexelint.enable": false,
+    "gnuGlobal.autoUpdate": "Enabled"
 }
